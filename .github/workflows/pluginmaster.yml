@@ -1,0 +1,35 @@
+name: Build pluginmaster.json
+
+# Regenerates pluginmaster.json whenever a plugin manifest changes, e.g. one edited on the
+# website. Pushes made with GITHUB_TOKEN don't trigger workflows, so its own commit can't loop.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "plugins/**"
+      - "tools/build_pluginmaster.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python tools/build_pluginmaster.py
+      - name: Commit pluginmaster.json if it changed
+        run: |
+          if git diff --quiet -- pluginmaster.json; then
+            echo "pluginmaster.json already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pluginmaster.json
+          git commit -m "chore: rebuild pluginmaster.json"
+          git push
