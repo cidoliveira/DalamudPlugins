@@ -3,7 +3,7 @@
     "Author": "cidoliveira (fork do AnoMech de Anomek)",
     "Name": "Lazarek",
     "InternalName": "AnoMech",
-    "AssemblyVersion": "0.5.1.1",
+    "AssemblyVersion": "0.5.1.2",
     "MinimumDalamudVersion": "15.0.3.5",
     "Description": "TESTE DE CHEATS IN-RAID PARA AQUELES QUE O JOGO PARECE A VISÃO DO EXTERMINADOR DO FUTURO\n\nFork do AnoMech (simulador de mecânicas de ultimate, solo, na inn) com Splatoon, BossMod e NyaDraw funcionando dentro das simulações, e os cenários de FRU.\n\nDesinstale o AnoMech original antes de instalar: os dois são o mesmo plugin por dentro.",
     "ApplicableVersion": "any",
@@ -29,11 +29,11 @@
     "IconUrl": "https://raw.githubusercontent.com/cidoliveira/DalamudPlugins/main/icons/lazarek.png",
     "Punchline": "TESTE DE CHEATS IN-RAID PARA AQUELES QUE O JOGO PARECE A VISÃO DO EXTERMINADOR DO FUTURO",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/cidoliveira/AnoMech/releases/download/lazarek-v0.5.1.1/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/cidoliveira/AnoMech/releases/download/lazarek-v0.5.1.1/latest.zip",
-    "DownloadLinkTesting": "https://github.com/cidoliveira/AnoMech/releases/download/lazarek-v0.5.1.1/latest.zip",
+    "DownloadLinkInstall": "https://github.com/cidoliveira/AnoMech/releases/download/lazarek-v0.5.1.2/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/cidoliveira/AnoMech/releases/download/lazarek-v0.5.1.2/latest.zip",
+    "DownloadLinkTesting": "https://github.com/cidoliveira/AnoMech/releases/download/lazarek-v0.5.1.2/latest.zip",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "LastUpdate": 1792368904
+    "LastUpdate": 1792417673
   }
 ]
